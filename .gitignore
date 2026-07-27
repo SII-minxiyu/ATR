@@ -61,6 +61,7 @@ env/
 *.tar.gz
 *.tgz
 outputs/**
+!outputs/.gitkeep
 
 # VASP/MD generated outputs (retain input configs such as INCAR/POSCAR/KPOINTS)
 OUTCAR
