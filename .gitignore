@@ -78,6 +78,11 @@ POTCAR
 models/**
 !models/**/
 !models/**/*.md
+!models/*.joblib
+!models/**/*.model
+!models/**/*.ckpt
+!models/**/*.pth
+!models/**/*.pth.tar
 
 # Large JSON dataset; small JSON metadata/configuration files remain eligible
 data/mp-r2scan/MPr2SCAN.json
