@@ -1,0 +1,38 @@
+{
+  "inputs": [
+    "/inspire/hdd/global_user/luomingxiang-240108540155/luyouqi/md_HgInSn_48atom_vasp/reference_dft_md/run_002_r2scan_nvt_300K_2ps/OUTCAR",
+    "/inspire/hdd/global_user/luomingxiang-240108540155/luyouqi/md_HgInSn_48atom_vasp/reference_dft_md/run_004_r2scan_nvt_300K_extend_3ps/OUTCAR"
+  ],
+  "output": "/inspire/hdd/global_user/luomingxiang-240108540155/luyouqi/md_HgInSn_48atom_vasp/ml_test_dataset_r2scan_HgInSn48/r2scan_300K_5ps/HgInSn48_r2scan_300K_5ps_prod_after500fs_all.extxyz",
+  "source_run": "run_002_r2scan_nvt_300K_2ps+run_004_r2scan_nvt_300K_extend_3ps",
+  "functional": "R2SCAN",
+  "ensemble": "NVT",
+  "temperature_K": 300.0,
+  "timestep_fs": 1.0,
+  "total_frames_in_inputs": 5000,
+  "offsets": [
+    {
+      "input": "/inspire/hdd/global_user/luomingxiang-240108540155/luyouqi/md_HgInSn_48atom_vasp/reference_dft_md/run_002_r2scan_nvt_300K_2ps/OUTCAR",
+      "frame_offset": 0,
+      "frames": 2000
+    },
+    {
+      "input": "/inspire/hdd/global_user/luomingxiang-240108540155/luyouqi/md_HgInSn_48atom_vasp/reference_dft_md/run_004_r2scan_nvt_300K_extend_3ps/OUTCAR",
+      "frame_offset": 2000,
+      "frames": 3000
+    }
+  ],
+  "stride": 1,
+  "start": 500,
+  "selected_frames": 4500,
+  "first_source_step": 501,
+  "last_source_step": 5000,
+  "format": "extxyz",
+  "contains": [
+    "cell",
+    "positions",
+    "energy",
+    "forces"
+  ],
+  "note": "Stress may also be present if ASE parsed it from the VASP output."
+}

@@ -1,0 +1,83 @@
+# macOS and editor metadata
+.DS_Store
+.vscode/
+.idea/
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Local secrets and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*credentials*
+*secret*
+
+# Large datasets, trajectories, databases, and tabular results
+*.extxyz
+*.xyz
+*.parquet
+*.csv
+*.jsonl
+*.db
+*.sqlite
+*.sqlite3
+*.traj
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.pkl
+
+# Model weights and binary artifacts
+*.model
+*.ckpt
+*.pth
+*.pt
+*.onnx
+*.bin
+
+# Logs, generated plots, archives, and run outputs
+*.log
+*.out
+*.png
+*.jpg
+*.jpeg
+*.tif
+*.tiff
+*.pdf
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+outputs/**
+
+# VASP/MD generated outputs (retain input configs such as INCAR/POSCAR/KPOINTS)
+OUTCAR
+vasprun.xml
+XDATCAR
+OSZICAR
+REPORT
+PCDAT
+CONTCAR
+WAVECAR
+CHGCAR
+POTCAR
+
+# Keep model documentation in place, but exclude downloaded model files
+models/**
+!models/**/
+!models/**/*.md
+
+# Large JSON dataset; small JSON metadata/configuration files remain eligible
+data/mp-r2scan/MPr2SCAN.json

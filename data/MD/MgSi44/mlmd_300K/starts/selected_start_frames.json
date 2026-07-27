@@ -1,0 +1,35 @@
+[
+  {
+    "global_frame": 501,
+    "global_time_fs": 501,
+    "global_time_ps": 0.501,
+    "original_source_step": 501,
+    "formula": "Mg24Si20",
+    "natoms": 44,
+    "energy_eV": -246.02026143,
+    "extxyz": "starts/MgSi44_frame_501.extxyz",
+    "poscar": "starts/MgSi44_frame_501.vasp"
+  },
+  {
+    "global_frame": 1001,
+    "global_time_fs": 1001,
+    "global_time_ps": 1.001,
+    "original_source_step": 1001,
+    "formula": "Mg24Si20",
+    "natoms": 44,
+    "energy_eV": -247.77450214,
+    "extxyz": "starts/MgSi44_frame_1001.extxyz",
+    "poscar": "starts/MgSi44_frame_1001.vasp"
+  },
+  {
+    "global_frame": 1501,
+    "global_time_fs": 1501,
+    "global_time_ps": 1.501,
+    "original_source_step": 1501,
+    "formula": "Mg24Si20",
+    "natoms": 44,
+    "energy_eV": -248.47290031,
+    "extxyz": "starts/MgSi44_frame_1501.extxyz",
+    "poscar": "starts/MgSi44_frame_1501.vasp"
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "initial": "/inspire/hdd/global_user/luomingxiang-240108540155/luyouqi/md_HgInSn_48atom_vasp/model_md/chgnet_r2scan_300K_from_dft_midframes/starts/HgInSn48_source_step_2501.extxyz",
+  "out_dir": "/inspire/hdd/global_user/luomingxiang-240108540155/luyouqi/md_HgInSn_48atom_vasp/model_md/chgnet_r2scan_300K_from_dft_midframes/runs/run_011_step2501_7net-omni-i12-mp_r2scan_300K_100ps",
+  "model_label": "7net-omni-i12-mp_r2scan",
+  "sevennet_model": "7net-omni-i12",
+  "selected_modal": "mp_r2scan",
+  "modal_candidates": [
+    "mp r2scan",
+    "mp_r2scan"
+  ],
+  "file_type": null,
+  "steps": 100000,
+  "temperature_K": 300.0,
+  "starting_temperature_K": 300.0,
+  "ensemble": "nvt",
+  "thermostat": "Berendsen",
+  "taut_fs": 100.0,
+  "timestep_fs": 1.0,
+  "loginterval": 10,
+  "device": "cuda",
+  "seed": 20260514,
+  "accelerator_preference": "auto",
+  "selected_accelerator": "flash",
+  "accelerator_availability": {
+    "flash": true,
+    "cueq": false,
+    "oeq": false
+  },
+  "natoms": 48,
+  "formula": "Hg16In20Sn12"
+}

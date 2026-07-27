@@ -1,0 +1,23 @@
+{
+  "input": "/inspire/hdd/global_user/luomingxiang-240108540155/luyouqi/md_InSe_48atom_vasp/reference_dft_md/run_005_r2scan_nvt_300K_1ps/OUTCAR",
+  "output": "/inspire/hdd/global_user/luomingxiang-240108540155/luyouqi/md_InSe_48atom_vasp/ml_test_dataset_r2scan_InSe48/r2scan_300K/InSe48_r2scan_300K_part1_1ps_all.extxyz",
+  "source_run": "run_005_r2scan_nvt_300K_1ps",
+  "functional": "R2SCAN",
+  "ensemble": "NVT",
+  "temperature_K": 300.0,
+  "timestep_fs": 1.0,
+  "total_frames_in_input": 1000,
+  "stride": 1,
+  "start": 0,
+  "selected_frames": 1000,
+  "first_source_step": 1,
+  "last_source_step": 1000,
+  "format": "extxyz",
+  "contains": [
+    "cell",
+    "positions",
+    "energy",
+    "forces"
+  ],
+  "note": "Stress may also be present if ASE parsed it from the VASP output."
+}

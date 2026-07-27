@@ -1,0 +1,19 @@
+{
+  "output": "/inspire/hdd/global_user/luomingxiang-240108540155/luyouqi/md_InSe_48atom_vasp/ml_test_dataset_r2scan_InSe48/r2scan_300K/InSe48_r2scan_300K_2ps_all.extxyz",
+  "source_runs": [
+    "run_005_r2scan_nvt_300K_1ps",
+    "run_006_r2scan_nvt_300K_extend_1ps"
+  ],
+  "functional": "R2SCAN",
+  "ensemble": "NVT",
+  "temperature_K": 300,
+  "timestep_fs": 1.0,
+  "selected_frames": 2000,
+  "format": "extxyz",
+  "contains": [
+    "cell",
+    "positions",
+    "energy",
+    "forces"
+  ]
+}

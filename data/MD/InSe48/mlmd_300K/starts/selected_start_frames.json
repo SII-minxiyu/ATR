@@ -1,0 +1,35 @@
+[
+  {
+    "global_frame": 501,
+    "global_time_fs": 501,
+    "global_time_ps": 0.501,
+    "original_source_step": 501,
+    "formula": "In24Se24",
+    "natoms": 48,
+    "energy_eV": -903.008611,
+    "extxyz": "starts/InSe48_frame_501.extxyz",
+    "poscar": "starts/InSe48_frame_501.vasp"
+  },
+  {
+    "global_frame": 1001,
+    "global_time_fs": 1001,
+    "global_time_ps": 1.001,
+    "original_source_step": 1,
+    "formula": "In24Se24",
+    "natoms": 48,
+    "energy_eV": -902.28827615,
+    "extxyz": "starts/InSe48_frame_1001.extxyz",
+    "poscar": "starts/InSe48_frame_1001.vasp"
+  },
+  {
+    "global_frame": 1501,
+    "global_time_fs": 1501,
+    "global_time_ps": 1.501,
+    "original_source_step": 501,
+    "formula": "In24Se24",
+    "natoms": 48,
+    "energy_eV": -902.45039944,
+    "extxyz": "starts/InSe48_frame_1501.extxyz",
+    "poscar": "starts/InSe48_frame_1501.vasp"
+  }
+]

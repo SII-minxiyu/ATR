@@ -1,0 +1,15 @@
+{
+  "initial": "/inspire/hdd/global_user/luomingxiang-240108540155/luyouqi/md_MgSi_44atom_vasp/model_md/chgnet_r2scan_300K_from_dft_midframes/starts/MgSi44_frame_1001.extxyz",
+  "checkpoint": "/inspire/hdd/global_user/luomingxiang-240108540155/teacher/chgnet_distill_pretrain/finetune_default_graph_balanced_from_e35_e10_ew3_fw1p5_lr5e5/best.pth.tar",
+  "out_dir": "/inspire/hdd/global_user/luomingxiang-240108540155/luyouqi/md_MgSi_44atom_vasp/model_md/chgnet_r2scan_300K_from_dft_midframes/runs/run_004_frame1001_base_300K_100ps",
+  "steps": 100000,
+  "temperature_K": 300.0,
+  "starting_temperature_K": 300.0,
+  "timestep_fs": 1.0,
+  "loginterval": 10,
+  "device": "cuda",
+  "thermostat": "Berendsen",
+  "seed": 20260514,
+  "natoms": 44,
+  "formula": "Mg24Si20"
+}

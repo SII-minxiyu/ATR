@@ -1,0 +1,19 @@
+{
+  "log_rows": 10001,
+  "frames": 10001,
+  "time_ps_start": 0.0,
+  "time_ps_end": 100.0,
+  "temperature_K_min": 204.7,
+  "temperature_K_max": 608.1,
+  "temperature_K_mean": 301.06126387361263,
+  "epot_eV_start": -267.7554,
+  "epot_eV_end": -273.8573,
+  "epot_eV_per_atom_mean": -6.218931257101563,
+  "epot_eV_per_atom_std": 0.012803839016395221,
+  "min_pair_distance_A_min": 2.1038355383879903,
+  "min_pair_distance_A_mean": 2.268541961861509,
+  "min_pair_distance_A_final": 2.280286671685621,
+  "max_force_eV_per_A_mean": 1.1110624775820555,
+  "max_force_eV_per_A_max": 3.1280476019925754,
+  "max_force_eV_per_A_final": 0.954312857584219
+}

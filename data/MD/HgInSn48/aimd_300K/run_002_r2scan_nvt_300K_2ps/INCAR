@@ -1,0 +1,40 @@
+SYSTEM = HgInSn 48-atom NVT DFT-MD R2SCAN 2 ps reference, 300 K
+
+# Electronic structure
+PREC   = Accurate
+ENCUT  = 450
+EDIFF  = 1E-05
+NELM   = 100
+ALGO   = Fast
+METAGGA = R2SCAN
+LMIXTAU = .TRUE.
+ISMEAR = 1
+SIGMA  = 0.10
+ISPIN  = 1
+LASPH  = .TRUE.
+LREAL  = Auto
+ADDGRID = .TRUE.
+ISYM   = 0
+
+# Molecular dynamics: NVT, fixed cell
+IBRION = 0
+NSW    = 2000
+POTIM  = 1.0
+TEBEG  = 300
+TEEND  = 300
+MDALGO = 2
+SMASS  = 0
+ISIF   = 2
+
+# Output for trajectory checking and ML-reference comparison
+LWAVE  = .FALSE.
+LCHARG = .FALSE.
+LVTOT  = .FALSE.
+LELF   = .FALSE.
+NWRITE = 2
+NBLOCK = 1
+KBLOCK = 1
+
+# Parallelization: Gamma-only single-k-point MD
+KPAR   = 1
+NCORE  = 4
