@@ -1,13 +1,13 @@
-# ATR 数据下载说明
+# ATR Dataset
 
-本目录中的大型数据集、轨迹文件和生成结果不存放在 GitHub 仓库中，后续将发布到 Hugging Face，以避免 Git 仓库体积过大。
+The complete ATR dataset is hosted on Hugging Face rather than in this GitHub repository:
 
-## 下载地址
+**Dataset:** [SII-minxiyu/ATR](https://huggingface.co/datasets/SII-minxiyu/ATR/)
 
-- Hugging Face 数据集：`待发布后补充链接`
+To download the dataset into this directory while preserving its original layout, use the Hugging Face CLI:
 
-数据集发布后，请下载并解压到本 `data/` 目录中，保持数据集原有的文件名和目录结构不变。
+```bash
+hf download SII-minxiyu/ATR --repo-type dataset --local-dir data
+```
 
-## GitHub 中保留的内容
-
-GitHub 仓库仅保留复现实验所需的源码、脚本、小型配置与元数据以及说明文档。大型 `.extxyz`、`.xyz`、`.parquet`、`.jsonl`、数据库、轨迹和生成结果文件由 `.gitignore` 排除。
+The GitHub repository contains the source code, scripts, model weights, configuration files, and documentation. Dataset files, trajectories, databases, and generated results are maintained in the Hugging Face dataset repository.

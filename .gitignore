@@ -86,3 +86,7 @@ models/**
 
 # Large JSON dataset; small JSON metadata/configuration files remain eligible
 data/mp-r2scan/MPr2SCAN.json
+
+# The complete dataset is hosted on Hugging Face; keep only its pointer README on GitHub
+data/**
+!data/README.md
