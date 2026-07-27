@@ -12,16 +12,6 @@ interatomic potentials (uMLIPs) into reliable and traceable r2SCAN-level pseudo-
 For each candidate structure, ATR either selects a high-confidence teacher prediction
 or actively rejects the structure when no teacher is sufficiently reliable.
 
-## Highlights
-
-- Structure-wise teacher selection with an explicit Accept/Reject decision.
-- Top-5 teacher deployment using an XGBoost A/R router and lightweight risk control.
-- CHGNet student pretraining, MP-r2SCAN evaluation, and finite-temperature molecular
-dynamics validation.
-- Export of routing confidence, selected-teacher identity, and per-structure metadata.
-
-
-
 ## Repository layout
 
 ```text
@@ -91,6 +81,24 @@ Reproducing the DFT-AIMD calculations requires a separate VASP installation and
 locally licensed `POTCAR` files. Proprietary VASP files are not included.
 
 ## Data preparation
+
+The complete ATR data package is hosted in the Hugging Face dataset repository
+[SII-minxiyu/ATR](https://huggingface.co/datasets/SII-minxiyu/ATR). From the root of
+this GitHub repository, install the Hugging Face CLI and download the dataset directly
+into `data/`:
+
+```bash
+pip install -U huggingface_hub
+hf download SII-minxiyu/ATR \
+  --repo-type dataset \
+  --local-dir data \
+  --exclude ".gitattributes"
+```
+
+This command preserves the dataset's original directory structure and places every
+file at the paths expected by the training, routing, and evaluation scripts below.
+The download contains approximately 75.9 GiB, so ensure sufficient disk space before
+starting. Keep the file names and relative paths unchanged after downloading.
 
 The initial unlabeled candidate structures used by the ATR workflow are stored under:
 
